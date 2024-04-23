@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Sklep</title>
+</head>
+<body>
+    <%- include ('blocks/header') -%>
+    <main>
+        <div class="new">
+            <div class="image">
+                <img src="/photos/newImage3.png" alt="">
+            </div>
+            <div class="image">
+                <img src="/photos/newImage4.png" alt="">
+            </div>
+            <i id="prev" onclick="show_image(-1)" class="fa fa-angle-left" aria-hidden="true"></i>
+            <i id="next" onclick="show_image(1)" class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+
+        <!-- Produkty -->
+
+        <div class="products">
+            <div class="product">
+                <div class="productImage">
+                    <img src="/photos/backpack.png" alt="backpack">
+                </div>
+                <div class="productDitails">
+                    <i class="fa-solid fa-cart-shopping myCart"></i>
+                    <p>Plecak<br>Tylko za<br>250 zł</p>
+                    <i class="fa-solid fa-heart myFavorite"></i>
+                </div>
+            </div>
+            <div class="product">
+                <div class="productImage">
+                    <img src="/photos/hudi.png" alt="hudi">
+                </div>
+                <div class="productDitails">
+                    <i class="fa-solid fa-cart-shopping myCart"></i>
+                    <p>Bluza z kapturem<br>Tylko za <br>80 zł</p>
+                    <i class="fa-solid fa-heart myFavorite"></i>
+                </div>
+            </div>
+            <div class="product">
+                <div class="productImage">
+                    <img src="/photos/jeans.png" alt="jeans">
+                </div>
+                <div class="productDitails">
+                    <i class="fa-solid fa-cart-shopping myCart"></i>
+                    <p>Dżinsy<br>Tylko za <br>150 zł</p>
+                    <i class="fa-solid fa-heart myFavorite"></i>
+                </div>
+            </div>
+            <div class="product">
+                <div class="productImage">
+                    <img src="/photos/boots.png" alt="boots">
+                </div>
+                <div class="productDitails">
+                    <i class="fa-solid fa-cart-shopping myCart"></i>
+                    <p>Buty<br>Tylko za <br>350 zł</p>
+                    <i class="fa-solid fa-heart myFavorite"></i>
+                </div>
+            </div>
+            <div class="product">
+                <div class="productImage">
+                    <img src="/photos/glasses.png" alt="glasses">
+                </div>
+                <div class="productDitails">
+                    <i class="fa-solid fa-cart-shopping myCart"></i>
+                    <p>Okulary<br>Tylko za <br>250 zł</p>
+                    <i class="fa-solid fa-heart myFavorite"></i>
+                </div>
+            </div>
+            <div class="product">
+                <div class="productImage">
+                    <img src="/photos/slippers.png" alt="slippers">
+                </div>
+                <div class="productDitails">
+                    <i class="fa-solid fa-cart-shopping myCart"></i>
+                    <p>Kapcie<br>Tylko za <br>80 zł</p>
+                    <i class="fa-solid fa-heart myFavorite"></i>
+                </div>
+            </div>
+            <div class="product">
+                <div class="productImage">
+                    <img src="/photos/sneakers.png" alt="sneakers">
+                </div>
+                <div class="productDitails">
+                    <i class="fa-solid fa-cart-shopping myCart"></i>
+                    <p>Buty sportowe<br>Tylko za <br>300 zł</p>
+                    <i class="fa-solid fa-heart myFavorite"></i>
+                </div>
+            </div>
+            <div class="product">
+                <div class="productImage">
+                    <img src="/photos/sneakers2.png" alt="sneakers2">
+                </div>
+                <div class="productDitails">
+                    <i class="fa-solid fa-cart-shopping myCart"></i>
+                    <p>Trampki<br>Tylko za <br>250 zł</p>
+                    <i class="fa-solid fa-heart myFavorite"></i>
+                </div>
+            </div>
+        </div>
+
+         <!-- End Produkty -->
+    </main>
+
+    <%- include ('blocks/footer') -%>
+
+    <script src="script.js"></script>
+</body>
+</html>

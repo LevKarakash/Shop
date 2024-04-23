@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Header */
+
+header{
+    width: 90%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(5, 11, 46);
+}
+
+header h1 {
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: gray;
+    font-size: 24px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: white;
+}
+
+/* End Header */
+
+
+/* Main */
+
+main{
+    display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+/* End Main */
+
+
+/* Slider reklamowy */
+
+.new img {
+    width: 100%;
+    height: 650px;
+}
+
+.new .image{
+    display: none;
+}
+
+.new i{
+    cursor: pointer;
+}
+
+/* End Slider reklamowy */
+
+
+/* Products */
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products img {
+    display: flex;
+    width: 400px;
+    height: 400px;  
+}
+
+.product {
+    cursor: pointer;
+    margin: 30px 25px;
+}
+
+.product:hover {
+    transform: scale(1.1);
+}
+
+.product p {
+    color: white; 
+    text-align: center;
+    justify-content: center;
+}
+
+.productDitails{
+    position: relative;
+    font-weight: bold;
+    background-color: rgb(52, 106, 141);
+    width: 400px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* End Products */
+
+/* Konfiguracja obrazków obrazków Wózka i Ulubione */
+
+.myCart{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.myCart:hover{
+    transform: scale(1.1);
+}
+
+.product:hover .myCart{
+    opacity: 1;
+}
+
+.myFavorite{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-top: 10px;
+    font-size: 24px;
+    margin-right: 60px;
+}
+
+.myFavorite:hover{
+    transform: scale(1.1);
+}
+
+.product:hover .myFavorite{
+    opacity: 1;
+}
+
+/* End Konfiguracja obrazków obrazków Wózka i Ulubione */
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    width: 90%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(5, 11, 46);
+}
+
+footer h2{
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+/* EndFooter */
+
+
+
+/* Konfiguracja dodatkowych stron (cart ta favorites) */
+
+.newPage{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+/* End Konfiguracja dodatkowych stron (cart ta favorites) */
+
+
+
+/* Konfiguracja strzałek */
+
+#prev{
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    font-size: 24px;
+}
+
+#next{
+    position: absolute;
+    top: 400px;
+    right: 0px;
+    font-size: 24px;
+}
+
+/* End Konfiguracja strzałek */
+
+
+
+
+/* Media */
+
+@media(max-width:1800px){
+    .product{
+        margin-left: 150px;
+    }
+}
+
+@media(max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 3%;
+    }
+}
+
+/* End Media */
